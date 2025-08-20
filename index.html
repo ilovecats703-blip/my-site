@@ -58,6 +58,12 @@
             text-align: center;
         }
 
+        h1 {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
         .flash {
             animation: flash 1.5s ease-in-out infinite;
         }
@@ -99,13 +105,13 @@
         }
 
         .gif-gallery {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            gap: 10px;
             justify-content: center;
         }
 
         .gif-gallery img {
-            width: 150px;
+            width: 100%;
             height: auto;
         }
 
@@ -134,6 +140,7 @@
             text-decoration: underline;
         }
 
+        /* Responsive grid for GIF gallery */
         @media (max-width: 600px) {
             .section {
                 padding: 10px;
@@ -147,8 +154,26 @@
                 font-size: 18px;
             }
 
-            .gif-gallery img {
-                width: 100px;
+            .gif-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 768px) {
+            .gif-gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .gif-gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .gif-gallery {
+                grid-template-columns: repeat(4, 1fr);
             }
         }
     </style>
@@ -156,7 +181,7 @@
 <body>
     <div class="container">
         <div class="section">
-            <h1 class="flash sparkle">Welcome to My Kawaii Goth Sanrio World!</h1>
+            <h1 class="flash sparkle">welcome to my site</h1>
             <marquee>Enter if you dare... Cute but spooky! ★彡 Share my finds and follow me!</marquee>
         </div>
 
@@ -168,7 +193,7 @@
         <div class="section">
             <h2>Sanrio GIF Gallery</h2>
             <div class="gif-gallery">
-                <img src="https://gifdb.com/gif/sanrio-kuromi-laughs-blushes-ic1g5mla15vg7531.gif" alt="Kuromi Laughs">
+                <img src="https://gifdb.com/images/high/sanrio-kuromi-laughs-blushes-ic1g5mla15vg7531.webp" alt="Kuromi Laughs">
                 <img src="https://gifdb.com/gif/sanrio-kuromi-petting-6nmn9fmechlsicc4.gif" alt="Kuromi Petting">
                 <img src="https://gifdb.com/gif/sanrio-kuromi-calls-lbc4gvsnmeg9ka3r.gif" alt="Kuromi Calls">
                 <img src="https://gifdb.com/gif/sanrio-kuromi-blushing-182grtnn3hdhvml8.gif" alt="Kuromi Blushing">
@@ -183,6 +208,7 @@
                 <img src="https://gifdb.com/gif/hello-kitty-i-m-sorry-hahofinm29wvvb12.gif" alt="Hello Kitty Sorry">
                 <img src="https://gifdb.com/gif/hello-kitty-good-luck-4o2vxfdv4np95w60.gif" alt="Hello Kitty Good Luck">
                 <img src="https://gifdb.com/gif/hello-kitty-plane-ride-amdn9o6c0um73hki.gif" alt="Hello Kitty Plane">
+                <img src="https://gifdb.com/images/high/sanrio-kuromi-laughs-blushes-ic1g5mla15vg7531.webp" alt="Kuromi Laughs">
             </div>
         </div>
 
