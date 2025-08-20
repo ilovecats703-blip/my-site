@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawaii Goth Sanrio 90s Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Runic&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Gaegu', cursive;
+            background-image: url('https://i.imgur.com/SHZe50s.gif'); /* 90s starry/glittery background GIF */
+            background-repeat: repeat;
+            color: #FF69B4; /* Hot pink text */
+            margin: 0;
+            padding: 20px;
+            cursor: url('https://www.cursors-4u.com/cursor/2009/02/05/kawaii.html'), auto; /* Kawaii custom cursor */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .section {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black for goth feel */
+            border: 2px solid #000;
+            padding: 20px;
+            margin: 20px 0;
+            width: 100%;
+            max-width: 800px;
+            position: relative;
+        }
+
+        .section::before, .section::after {
+            content: 'ᚱᚢᚾᛁᚲ'; /* Runic symbols for subtle borders */
+            font-family: 'Noto Sans Runic', sans-serif;
+            color: #FF1493;
+            position: absolute;
+            font-size: 20px;
+            opacity: 0.5;
+        }
+
+        .section::before {
+            top: -15px;
+            left: 10px;
+        }
+
+        .section::after {
+            bottom: -15px;
+            right: 10px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .flash {
+            animation: flash 1.5s ease-in-out infinite;
+        }
+
+        @keyframes flash {
+            0% { opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 1; }
+        }
+
+        .sparkle {
+            position: relative;
+            display: inline-block;
+        }
+
+        .sparkle::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, transparent 70%);
+            opacity: 0;
+            animation: sparkle 2s infinite;
+        }
+
+        @keyframes sparkle {
+            0% { opacity: 0; transform: scale(0); }
+            50% { opacity: 1; transform: scale(1); }
+            100% { opacity: 0; transform: scale(0); }
+        }
+
+        img {
+            border: 5px dashed #FF1493; /* Pink dashed border */
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+        }
+
+        .gif-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gif-gallery img {
+            width: 150px;
+            height: auto;
+        }
+
+        marquee {
+            color: #00FF00; /* Lime green for 90s vibe */
+            font-size: 24px;
+            width: 100%;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            color: #FF69B4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .section {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            .gif-gallery img {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h1 class="flash sparkle">Welcome to My Kawaii Goth Sanrio World!</h1>
+            <marquee>Enter if you dare... Cute but spooky! ★彡 Share my finds and follow me!</marquee>
+        </div>
+
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I'm obsessed with 90s vibes, Sanrio characters, and mixing cute with goth. Glitter, sparkles, and darkness all in one! Here I share my favorite finds, social media, and TikTok videos.</p>
+        </div>
+
+        <div class="section">
+            <h2>Sanrio GIF Gallery</h2>
+            <div class="gif-gallery">
+                <img src="https://gifdb.com/gif/sanrio-kuromi-laughs-blushes-ic1g5mla15vg7531.gif" alt="Kuromi Laughs">
+                <img src="https://gifdb.com/gif/sanrio-kuromi-petting-6nmn9fmechlsicc4.gif" alt="Kuromi Petting">
+                <img src="https://gifdb.com/gif/sanrio-kuromi-calls-lbc4gvsnmeg9ka3r.gif" alt="Kuromi Calls">
+                <img src="https://gifdb.com/gif/sanrio-kuromi-blushing-182grtnn3hdhvml8.gif" alt="Kuromi Blushing">
+                <img src="https://gifdb.com/gif/sanrio-kuromi-spins-4hxhv7gfgkws5b50.gif" alt="Kuromi Spins">
+                <img src="https://gifdb.com/gif/sanrio-my-melody-plush-507pdwbljyso9yjx.gif" alt="My Melody Plush">
+                <img src="https://gifdb.com/gif/sanrio-my-melody-basket-yhjxj3c20mzg5xvz.gif" alt="My Melody Basket">
+                <img src="https://gifdb.com/gif/sanrio-my-melody-fight-3jwupio6czwbjgac.gif" alt="My Melody Fight">
+                <img src="https://gifdb.com/gif/hello-kitty-animated-chat-p68wznpna0egfpq3.gif" alt="Hello Kitty Chat">
+                <img src="https://gifdb.com/gif/cute-pixel-hello-kitty-dancing-pkbnwla4ju6wsnx4.gif" alt="Pixel Hello Kitty Dancing">
+                <img src="https://gifdb.com/gif/hello-kitty-sparkling-lock-wc9wo7djn65pk2s7.gif" alt="Hello Kitty Sparkling">
+                <img src="https://gifdb.com/gif/hello-kitty-eating-cake-iz2aif5nceg8j1jq.gif" alt="Hello Kitty Eating Cake">
+                <img src="https://gifdb.com/gif/hello-kitty-i-m-sorry-hahofinm29wvvb12.gif" alt="Hello Kitty Sorry">
+                <img src="https://gifdb.com/gif/hello-kitty-good-luck-4o2vxfdv4np95w60.gif" alt="Hello Kitty Good Luck">
+                <img src="https://gifdb.com/gif/hello-kitty-plane-ride-amdn9o6c0um73hki.gif" alt="Hello Kitty Plane">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Here's My Social Media Handles</h2>
+            <ul>
+                <li><a href="https://www.instagram.com/yourusername">Instagram: @yourusername</a></li>
+                <li><a href="https://www.tiktok.com/@yourusername">TikTok: @yourusername</a></li>
+                <li><a href="https://twitter.com/yourusername">X (Twitter): @yourusername</a></li>
+                <li><a href="https://www.youtube.com/yourchannel">YouTube: Your Channel</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Here's Where to Buy My Stuff</h2>
+            <p>Check out these cute Sanrio-inspired items and more!</p>
+            <ul>
+                <li><a href="https://example.com/shop1">Kuromi Plush Toy</a></li>
+                <li><a href="https://example.com/shop2">Goth Hello Kitty Accessories</a></li>
+                <li><a href="https://example.com/shop3">My Melody Stickers</a></li>
+                <li><a href="https://example.com/shop4">Kawaii Goth Clothing</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>My TikTok Videos</h2>
+            <p>Watch my latest videos on TikTok!</p>
+            <ul>
+                <li><a href="https://www.tiktok.com/@yourusername/video/123456">Sanrio Haul Video</a></li>
+                <li><a href="https://www.tiktok.com/@yourusername/video/789101">Kawaii Goth Makeup Tutorial</a></li>
+                <li><a href="https://www.tiktok.com/@yourusername/video/112131">90s Sanrio Dance</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Share My Finds</h2>
+            <p>Here are some amazing things I've found that you can buy:</p>
+            <ul>
+                <li><a href="https://example.com/find1">Glittery Sanrio Notebook</a></li>
+                <li><a href="https://example.com/find2">Kuromi Keychain</a></li>
+                <li><a href="https://example.com/find3">Hello Kitty Goth Poster</a></li>
+                <li><a href="https://example.com/find4">My Melody Phone Case</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <p>Visitor counter: <img src="https://www.freevisitorcounters.com/counter/12345" alt="Counter"></p> <!-- Placeholder for 90s counter -->
+        </div>
+    </div>
+</body>
+</html>
