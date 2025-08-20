@@ -101,18 +101,20 @@
             border: 5px dashed #FF1493; /* Pink dashed border */
             max-width: 100%;
             height: auto;
-            margin: 10px;
         }
 
         .gif-gallery {
             display: grid;
-            gap: 10px;
+            gap: 15px; /* Increased gap for better spacing */
             justify-content: center;
+            padding: 10px; /* Added padding to ensure grid doesn't touch section borders */
         }
 
         .gif-gallery img {
             width: 100%;
             height: auto;
+            margin: 0; /* Removed margin to rely on grid gap */
+            box-sizing: border-box; /* Ensures border is included in width */
         }
 
         marquee {
