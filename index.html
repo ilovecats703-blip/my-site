@@ -105,7 +105,7 @@
 
         .gif-gallery {
             display: grid;
-            gap: 15px; /* Increased gap for better spacing */
+            gap: clamp(0.5rem, 2vw, 1rem); /* Responsive gap scaling with viewport width */
             justify-content: center;
             padding: 10px; /* Added padding to ensure grid doesn't touch section borders */
         }
@@ -158,24 +158,28 @@
 
             .gif-gallery {
                 grid-template-columns: 1fr;
+                gap: clamp(0.4rem, 1.5vw, 0.8rem); /* Smaller gap for small screens */
             }
         }
 
         @media (min-width: 601px) and (max-width: 768px) {
             .gif-gallery {
                 grid-template-columns: repeat(2, 1fr);
+                gap: clamp(0.5rem, 1.8vw, 0.9rem); /* Adjusted gap for medium screens */
             }
         }
 
         @media (min-width: 769px) and (max-width: 1024px) {
             .gif-gallery {
                 grid-template-columns: repeat(3, 1fr);
+                gap: clamp(0.6rem, 2vw, 1rem); /* Slightly larger gap for larger screens */
             }
         }
 
         @media (min-width: 1025px) {
             .gif-gallery {
                 grid-template-columns: repeat(4, 1fr);
+                gap: clamp(0.8rem, 2.2vw, 1.2rem); /* Largest gap for wide screens */
             }
         }
     </style>
